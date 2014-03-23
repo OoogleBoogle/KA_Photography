@@ -13,7 +13,7 @@
 	z-index: 100;
 }
 #title button {
-	background-color: transparent;
+	background-color: rgba(255, 255, 255, .2);
 	border: 1px solid black;
 }
 #title button a {
@@ -28,14 +28,16 @@
 	background-size: cover;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
 	#background {
 		width: 100%;
 		height: 100%;
 		background: url('../fullsize/Pears in Kitchen Set.jpg') no-repeat;
 		background-size: cover;
-		
-	} 
+	}
+	#title {
+		text-shadow: 0 0 2px white;
+	}
 
 }
 
