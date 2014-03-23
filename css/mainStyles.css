@@ -28,6 +28,10 @@
 	background-size: cover;
 }
 
+/*
+Media Queries at mid-size
+============================================================================================================*/
+
 @media screen and (min-width: 400px) {
 	#background {
 		width: 100%;
@@ -40,6 +44,10 @@
 	}
 
 }
+
+/*
+Media Queries for Desktop
+=============================================================================================================*/
 
 @media screen and (min-width: 950px) {
 		#background {
