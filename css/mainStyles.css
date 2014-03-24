@@ -1,3 +1,29 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-50c4s6');
+	src:url('../fonts/icomoon.eot?#iefix-50c4s6') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-50c4s6') format('woff'),
+		url('../fonts/icomoon.ttf?-50c4s6') format('truetype'),
+		url('../fonts/icomoon.svg?-50c4s6#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
 * {
 	box-sizing: border-box;
 }
@@ -31,34 +57,36 @@
 	text-decoration: none;
 	padding: 20px;
 }
-header {
-	position: absolute;
+#sidebar {
+	position: fixed;
 	display: inline-block;
 	width: 75%;
 	height: 100%;
-	background: rgba(0, 0, 0, .2);
-	left: -75%;
+	background: rgba(255, 255, 255, .7);
+	border-right: 1px solid rgba(0, 0, 0, .2);
+	border-top: 1px solid rgba(0, 0, 0, .2);
+	display: none;
 }
-header h1 {
+#sidebar h1 {
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 2em;
 }
-header nav {
+#sidebar nav {
 	margin-top: 15%
 }
-header nav li {
+#sidebar nav li {
 	padding: 0 2%;
 	list-style-type: circle;
 	padding: 10px 0;
 	border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
-header nav li:first-child {
+#sidebar nav li:first-child {
 	border-top: 1px solid rgba(0, 0, 0, .2);
 }
-header nav li:hover {
+#sidebar nav li:hover {
 	background: rgba(0, 0, 0, .4)
 }
-header nav li a {
+#sidebar nav li a {
 	margin-left: 30px;
 	display: block;
 	width: 100%;
@@ -67,14 +95,35 @@ header nav li a {
 	text-decoration: none;
 }
 .gallery {
-	text-align: center;
+	margin-top: 80px;
 	background: white;
+	text-align: center;
 }
 .gallery img {
 	width: 100%;
 	padding: 4%;
 	border: 1px solid lightgray;
 	background: white;
+}
+.gal-title {
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	margin: 0;
+	background: rgba(255, 255, 255, .8);
+}
+.icon-menu:before {
+	content: "\e606";
+	color: black;
+}
+.icon-menu {
+	text-decoration: none;
+	margin-left: 2%
+}
+#food {
+	display: none;
 }
 .clearfix::after {
 	content: " ";

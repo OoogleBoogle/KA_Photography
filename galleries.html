@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 </head>
 <body>
-	<header>
+	<header id="sidebar">
 		<h1>Kevin Attfield Photography</h1>
 		<nav>
 			<li><a href="#">Interiors</a></li>
@@ -17,9 +17,11 @@
 			<li><a href="#">About Me &amp; Contact</a></li>
 		</nav>
 	</header>
-	<div id="interiors" class="gallery">
-	<h2>Interiors Gallery</h2>
-		<div>
+	<div id="interiors">
+		<div class="gal-title">
+			<h2>Interiors Gallery<a href="#" class="icon-menu"></a></h2>
+		</div>
+		<div class="gallery">
 			<a href="fullsize/Wren Kitchens Marlowe.jpg" data-lightbox="interiors" title="Wren Kitchens Marlowe" alt="Wren Kitchens Marlowe"><img src="fullsize/Wren Kitchens Marlowe.jpg"></a>
 			<a href="fullsize/Empire Stores White Bedding.jpg" data-lightbox="interiors" title="Empire Stores White Bedding" alt="Empire Stores White Bedding"><img src="fullsize/Empire Stores White Bedding.jpg"></a>
 			<a href="fullsize/Wren Kitchens Byron.jpg" data-lightbox="interiors" title="Wren Kitchens Byron" alt="Wren Kitchens Byron"><img src="fullsize/Wren Kitchens Byron.jpg"></a>
@@ -32,8 +34,10 @@
 			<a href="fullsize/Classic Choice Leather Sofa.jpg" data-lightbox="interiors" title="Classic Choice Leather Sofa" alt="Classic Choice Leather Sofa"><img src="fullsize/Classic Choice Leather Sofa.jpg"></a>
 		</div>
 	</div>
-	<div id="Food" class="gallery">
-		<h2>Food Gallery</h2>
+	<div id="food" class="gallery">
+		<div class="gal-title">
+			<h2>Food Gallery</h2><a href="" class="icon-menu"></a>
+		</div>
 		<a href="fullsize/Chicken in Black Bean Sauce.jpg" data-lightbox="food" title="Chicken in Black Bean Sauce" alt="Chicken in Black Bean Sauce"><img src="fullsize/Chicken in Black Bean Sauce.jpg"></a>
 		<a href="fullsize/Pears in Kitchen Set.jpg" data-lightbox="food" title="Pears in Kitchen Set" alt="Pears in Kitchen Set"><img src="fullsize/Pears in Kitchen Set.jpg"></a>
 		<a href="fullsize/CO-OP Chicken Pasta.jpg" data-lightbox="food" title="CO-OP Chicken Pasta" alt="CO-OP Chicken Pasta.jpg"><img src="fullsize/CO-OP Chicken Pasta.jpg"></a>
@@ -59,8 +63,8 @@
 		<a href="fullsize/Mushrooms 2.jpg" data-lightbox="food" title="Mushrooms 2" alt="Mushrooms 2"><img src="fullsize/Mushrooms 2.jpg"></a>
 	</div>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="modernizr.custom.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
-
+<script type="text/javascript" src="js/page.js"></script>
 </body>
 </html>
