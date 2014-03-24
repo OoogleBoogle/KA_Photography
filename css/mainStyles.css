@@ -67,8 +67,7 @@ header nav li a {
 	text-decoration: none;
 }
 .gallery {
-	position: absolute;
-	margin: 0 auto;
+	text-align: center;
 	background: white;
 }
 .gallery img {
@@ -94,18 +93,13 @@ header nav li a {
 	#title {
 		text-shadow: 0 0 2px white;
 	}
-	.gallery {
-		position: absolute;
-		left: 0;
-		right: 0;
-	}
 	.gallery img {
 		width: 45%;
 		padding: 1.2%;
 		margin: 1%;
 		border: 1px solid lightgray;
 	}
-	.gallery img[src*="Lowry"] {
+	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
 		width: 95%;
 	}
 
