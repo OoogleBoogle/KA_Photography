@@ -120,7 +120,8 @@
 }
 .icon-menu {
 	text-decoration: none;
-	margin-left: 2%;
+	float: left;
+	margin-left: 4%;
 	padding: 3px;
 	border: 1px solid lightgray;
 	border-radius: 5px;
@@ -133,6 +134,7 @@
 		height: 100%;
 		background: url('../fullsize/Pears in Kitchen Set.jpg') no-repeat;
 		background-size: cover;
+		background-position: 0 40%;
 	}
 	#title {
 		top: 18%;

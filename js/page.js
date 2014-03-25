@@ -19,5 +19,7 @@ $(document).ready(function() {
 		$('a').removeClass('selected');
 		$(this).addClass('selected');
 	})
-
+	$('*').on("swipeleft", function() {
+		$('#sidebar').animate({'left': 0});
+	});
 });
