@@ -198,7 +198,7 @@
 }
 
 
-@media (min-width: 950px) {
+@media (min-width: 1025px) {
 	.icon-menu, .gal-title {
 		display: none;
 	}
@@ -212,7 +212,7 @@
 		margin-top: 140px;
 	}
 	#topbar {
-		display: initial;
+		display: block;
 		position: fixed;
 		text-align: center;
 		top: 0;
