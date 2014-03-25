@@ -68,7 +68,13 @@
 	background: rgba(255, 255, 255, .7);
 	border-right: 1px solid rgba(0, 0, 0, .2);
 	border-top: 1px solid rgba(0, 0, 0, .2);
-	left: -78%;
+}
+.nav-hide {
+	left: -80%;
+	transition: .3s;
+}
+.nav-show {
+	left: 0;
 }
 #sidebar h1 {
 	text-align: center;

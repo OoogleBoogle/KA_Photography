@@ -3,15 +3,15 @@ $('#food').hide();
 $(document).ready(function() {
 	$('.icon-menu').on('click', function(e) {
 		e.preventDefault();
-		$('#sidebar').animate({'left': 0});
+		$('#sidebar').toggleClass('nav-show');
 	});
 	$('.food-link').on('click', function() {
-		$('#sidebar').animate({left: "-=78%"});
+		$('#sidebar').removeClass('nav-show');
 		$('#interiors').delay(300).fadeOut();
 		$('#food').delay(300).fadeIn();
 	});
 	$('.interior-link').on('click', function() {
-		$('#sidebar').animate({left: "-=78%"});
+		$('#sidebar').removeClass('nav-show');
 		$('#food').delay(300).fadeOut();
 		$('#interiors').delay(300).fadeIn();
 	});
@@ -19,7 +19,5 @@ $(document).ready(function() {
 		$('a').removeClass('selected');
 		$(this).addClass('selected');
 	})
-	$('*').on("swipeleft", function() {
-		$('#sidebar').animate({'left': 0});
-	});
+
 });
