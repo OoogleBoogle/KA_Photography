@@ -49,7 +49,9 @@
 	box-sizing: border-box;
 }
 /*================================================================ Mobile Portrait ====================================*/
-
+body {
+	background: #C4C4C4;
+}
 #topbar {
 	display: none;
 }
@@ -58,14 +60,15 @@
 	height: 100%;
 	background: url('../fullsize/Cushions.jpg') no-repeat;
 	background-size: cover;
+	opacity: .6;
 }
-#title-wrap {
+.title-wrap {
 	height: 100%;
 	position: relative;
 	background-color: transparent;
 	color: white;
 }
-#title {
+.title {
 	position: fixed;
 	text-align: center;
 	left: 0;
@@ -73,7 +76,7 @@
 	top: 25%;
 	z-index: 100;
 }
-#title h1 {
+.title h1 {
 	font-family: 'pt_sansregular';
 	font-size: 3.5em;
 	letter-spacing: -5px;
@@ -82,16 +85,16 @@
 	color: black;
 	text-shadow: 0 0 2px white;
 }
-#title h2 {
+.title h2 {
 	font-family: 'walkway_oblique_ultraboldRg';
 	font-size: 2em;
 	text-shadow: 0 0 1px white;
 	margin-top: 8px;
 }
-#title li {
+.title li {
 	display: inline-block;
 }
-#title li a {
+.title li a {
 	font-family: 'pt_sansregular';
 	font-size: 1.5em;
 	color: black;
@@ -146,17 +149,18 @@
 	text-decoration: none;
 }
 .gallery {
+	background: #C4C4C4;
 	margin-top: 80px;
-	background: white;
 	text-align: center;
 }
 .gallery img {
 	width: 100%;
-	padding: 4%;
+	padding: 2%;
 	border: 1px solid lightgray;
 	background: white;
 }
 .gal-title {
+	font-family: 'walkway_oblique_ultraboldRg';
 	position: fixed;
 	text-align: center;
 	top: 0;
@@ -190,14 +194,14 @@
 	}
 	.gallery img {
 		width: 45%;
-		padding: 1.2%;
+		padding: .5%;
 		margin: 1%;
 		border: 1px solid lightgray;
 	}
 	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
 		width: 95%;
 	}
-	#title h1 {
+	.title h1 {
 		font-size: 4.5em;
 	}
 	#sidebar h1 {
@@ -231,25 +235,25 @@
 	#sidebar {
 		width: 34%
 	}
-	#title {
+	.title {
 		margin: 0 auto;
 		width: 600px;
 	}
-	#title h1, h2 {
+	.title h1, h2 {
 		display: inline;
 		width: 100%;
 		height: 100%;
 	}
-	#title h1 {
+	.title h1 {
 		border-right: 5px solid black;
 		padding-right: 30px;
 	}
-	#title h2 {
+	.title h2 {
 		font-size: 1.8em;
 		vertical-align: top;
 		letter-spacing: 2px;
 	}
-	#title li {
+	.title li {
 		margin-top: 25px;
 	}
 	#sidebar nav li {
@@ -271,20 +275,24 @@
 	#sidebar nav li a {
 		margin-left: 15%;
 	}
+	#topbar a {
+		font-size: 1em;
+	}
 }
 
 /*=========================================================================== Desktop ==================================================*/
 @media (min-width: 1025px) {
-	.icon-menu, .gal-title {
+	.gal-title {
 		display: none;
 	}
-	#title {
+	.title {
 		width: 640px;
 	}
 	#background {
 		width: 100%;
 		height: 100%;
 		background: url('../fullsize/Wren Kitchens Lowry.jpg') no-repeat;
+		opacity: .9%;
 		background-size: cover;
 	}
 	.gallery {
@@ -299,24 +307,31 @@
 		height: 130px;
 		margin: 0;
 		background: rgba(255, 255, 255, .8);
+/*		box-shadow: 0 1px 2px;*/
 	}
 	#topbar nav {
 		width: 100%;
 	}
 	#topbar li {
 		display: inline-block;
-		margin: 0 30px;
+		margin-top: 50px;
+	
 	}
 	#topbar li a {
 		text-decoration: none;
 		color: black;
-		padding: 10px 20px;
+		padding: 5px 10px;
 		width: 100%;
 		height: 100%;
 		border-radius: 3px;
 	}
 	#topbar li:hover a {
 		background-color: rgba(20, 20, 20, .3);
+	}
+	.float-left {
+		float: right;
+		margin-right: 50px;
+		margin-top: 10px;
 	}
 	.selected {
 		background-color: rgba(20, 20, 20, .3);
