@@ -75,28 +75,35 @@
 }
 #title h1 {
 	font-family: 'pt_sansregular';
-	font-size: 4.5em;
+	font-size: 3.5em;
 	letter-spacing: -5px;
 	margin-top: -50px;
+	margin-bottom: 0;
 	color: black;
 	text-shadow: 0 0 2px white;
 }
 #title h2 {
 	font-family: 'walkway_oblique_ultraboldRg';
-	text-shadow: 0 0 2px white;
-}
-.dash {
-	display: none;
+	font-size: 2em;
+	text-shadow: 0 0 1px white;
+	margin-top: 8px;
 }
 #title li {
 	display: inline-block;
-	background-color: rgba(255, 255, 255, .1);
-	border: 1px solid black;
 }
 #title li a {
+	font-family: 'pt_sansregular';
+	font-size: 1.5em;
 	color: black;
 	text-decoration: none;
-	padding: 20px;
+	vertical-align: top;
+	padding: 0 10px;
+	text-shadow: 0 0 1px white;
+}
+.swirl {
+	background-image: url('../img/paisley.svg');
+	height: 30px;
+	width: 100px;
 }
 #sidebar {
 	position: fixed;
@@ -190,6 +197,9 @@
 	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
 		width: 95%;
 	}
+	#title h1 {
+		font-size: 4.5em;
+	}
 	#sidebar h1 {
 		font-size: 1.9em;
 	}
@@ -223,7 +233,7 @@
 	}
 	#title {
 		margin: 0 auto;
-		width: 700px;
+		width: 600px;
 	}
 	#title h1, h2 {
 		display: inline;
@@ -235,9 +245,12 @@
 		padding-right: 30px;
 	}
 	#title h2 {
-		font-size: 2em;
+		font-size: 1.8em;
 		vertical-align: top;
 		letter-spacing: 2px;
+	}
+	#title li {
+		margin-top: 25px;
 	}
 	#sidebar nav li {
 		display: list-item;
@@ -266,7 +279,7 @@
 		display: none;
 	}
 	#title {
-		width: 650px;
+		width: 640px;
 	}
 	#background {
 		width: 100%;
