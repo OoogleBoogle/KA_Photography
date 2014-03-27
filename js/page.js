@@ -1,6 +1,7 @@
 $('#food').hide();
 
 $(document).ready(function(e) {
+
 	$('.icon-menu').on('click', function(e) {
 		e.preventDefault();
 		$('#sidebar').toggleClass('nav-show');
@@ -18,5 +19,6 @@ $(document).ready(function(e) {
 	$('#topbar').on('click', 'a', function() {
 		$('a').removeClass('selected');
 		$(this).addClass('selected');
-	})
+	});
+
 });
