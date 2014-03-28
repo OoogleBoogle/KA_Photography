@@ -176,6 +176,10 @@ body {
 	margin: 0;
 	background: rgba(255, 255, 255, .8);
 }
+#food,
+#food > .gal-title {
+	margin-left: 0 !IMPORTANT;
+}
 .icon-menu:before {
 	content: "\e606";
 	color: black;
@@ -199,9 +203,10 @@ body {
 		background-size: cover;
 		background-position: 0 40%;
 	}
-	.gallery {
-		margin-left: -40px;
-	}
+/*	#food,
+	#food > .gal-title {
+		margin-left: 0 !IMPORTANT;
+	}*/
 	.gallery img {
 		width: 45%;
 		padding: .5%;
@@ -210,9 +215,6 @@ body {
 	}
 	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
 		width: 95%;
-	}
-	.gallery li {
-		margin-left: initial;
 	}
 	.title h1 {
 		font-size: 3.8em;
@@ -269,6 +271,9 @@ body {
 	}
 	.title li {
 		margin-top: 25px;
+	}
+	.gal-title {
+		padding-top: 20px;
 	}
 	#sidebar nav li {
 		display: list-item;
