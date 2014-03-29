@@ -7,13 +7,15 @@ $(document).ready(function(e) {
 	});
 	$('.food-link').on('click', function() {
 		$('#sidebar').removeClass('nav-show');
-		$('#interiors').delay(300).fadeOut();
-		$('#food').delay(300).fadeIn();
+		$('#interiors').fadeOut('fast', function() {
+			$('#food').fadeIn();
+		});
 	});
 	$('.interior-link').on('click', function() {
 		$('#sidebar').removeClass('nav-show');
-		$('#food').delay(300).fadeOut();
-		$('#interiors').delay(300).fadeIn();
+		$('#food').fadeOut('fast', function() {
+			$('#interiors').fadeIn();
+		});
 	});
 	$('#topbar').on('click', 'a', function() {
 		$('a').removeClass('selected');
