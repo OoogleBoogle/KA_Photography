@@ -323,6 +323,35 @@ body {
 	.gallery {
 		margin-top: 140px;
 	}
+	.about-me {
+		width: 60%;
+		height: 300%;
+		margin: 60px auto;
+		background: rgba(255, 255, 255, .9);
+		border-radius: 0 0 5px 5px;
+		box-shadow: 3px 3px 5px #777;
+		overflow: hidden;
+	}
+	.about-me:hover {
+		overflow: auto;
+	}
+	.about-me::-webkit-scrollbar {
+		background-color: black;
+
+	}
+	.about-me > * {
+		display: none;
+	}
+	.about-me hr {
+		width: 70%;
+	}
+/*	.about-me::-webkit-scrollbar {
+		display: none;
+		background-color: black;
+	}
+	.about-me:hover::-webkit-scrollbar {
+		display: block;
+	}*/
 	#topbar {
 		display: block;
 		position: fixed;
@@ -331,7 +360,7 @@ body {
 		width: 100%;
 		height: 130px;
 		margin: 0;
-		background: rgba(255, 255, 255, .8);
+		background: rgba(255, 255, 255, .9);
 		box-shadow: 0 4px 8px #777;
 		border-radius: 0 0 5px 5px;
 	}
