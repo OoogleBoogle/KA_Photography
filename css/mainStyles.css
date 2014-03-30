@@ -50,62 +50,10 @@
 }
 /*================================================================ Mobile Portrait ====================================*/
 body {
-	background: #C4C4C4;
+	background: rgba(255,255,255, .7);
 }
 #topbar {
 	display: none;
-}
-#background {
-	width: 100%;
-	height: 100%;
-	background: url('../fullsize/Cushions.jpg') no-repeat;
-	background-size: cover;
-	opacity: .6;
-}
-.title-wrap {
-	height: 100%;
-	position: relative;
-	background-color: transparent;
-	color: white;
-}
-.title {
-	position: fixed;
-	text-align: center;
-	left: 0;
-	right: 0;
-	top: 25%;
-	z-index: 100;
-}
-.title h1 {
-	font-family: verdana;
-	font-weight: lighter;
-	font-size: 3.3em;
-	letter-spacing: 0px;
-	margin-top: -50px;
-	margin-bottom: 0;
-	color: black;
-}
-.title h2 {
-	font-family: 'walkway_oblique_ultraboldRg';
-	font-size: 1.5em;
-	letter-spacing: 15px;
-	margin-top: 8px;
-}
-.title li {
-	display: inline-block;
-}
-.title li a {
-	font-family: 'pt_sansregular';
-	font-size: 1.2em;
-	color: black;
-	text-decoration: none;
-	vertical-align: top;
-	padding: 0 10px;
-	border: 1px ridge #ddd;
-	text-shadow: 0 0 1px white;
-}
-.enter {
-	outline: 1px groove #ddd;
 }
 #sidebar {
 	position: fixed;
@@ -149,13 +97,11 @@ body {
 	text-decoration: none;
 }
 .gallery {
-	background: #C4C4C4;
-	margin-top: 80px;
+	margin-top: 90px;
 	text-align: center;
 }
 .gallery img {
 	width: 100%;
-/*	padding: 2%;*/
 }
 .gal-title {
 	font-family: 'walkway_oblique_ultraboldRg';
@@ -163,11 +109,9 @@ body {
 	text-align: center;
 	top: 0;
 	width: 100%;
-	height: 70px;
+	height: 80px;
 	margin: 0;
-	background: rgba(255, 255, 255, .8);
-	box-shadow: 0 1px 15px #777;
-	border-radius: 0 0 5px 5px;
+	background: rgba(255, 255, 255, .6);
 }
 .icon-menu:before {
 	content: "\e606";
@@ -185,19 +129,8 @@ body {
 /*============================================================== Mobile Landscape ================================================*/
 
 @media (min-width: 410px) {
-	#background {
-		width: 100%;
-		height: 100%;
-		background: url('../fullsize/Pears in Kitchen Set.jpg') no-repeat;
-		background-size: cover;
-		background-position: 0 40%;
-	}
 	.gallery img {
 		width: 47%;
-/*		padding: .5%;*/
-/*		margin: 1%;
-		border: 1px solid lightgray;
-		box-shadow: 0px 0px 20px #777;*/
 	}
 	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
 		width: 95%;
@@ -241,33 +174,13 @@ body {
 /*=================================================Tablets==================================================*/
 
 @media (min-width: 600px) {
-	#sidebar {
-		width: 42%
-	}
-	.gal-title > h2 {
+	.gal-title h2 {
+		width: 100%;
 		display: inline-table;
 		vertical-align: middle;
 	}
-	.title {
-		margin: 0 auto;
-		width: 400px;
-		border: 1px solid black;
-	}
-	.title h1, h2 {
-		display: block;
-		width: 100%;
-		height: 100%;
-	}
-	.title h1 {
-		padding-right: 25px;
-	}
-	.title h2 {
-		font-size: 1.8em;
-		vertical-align: top;
-		letter-spacing: 15px;
-	}
-	.title li {
-		margin-top: 25px;
+	#sidebar {
+		width: 42%;
 	}
 	#sidebar nav hr {
 		display: block;
@@ -287,9 +200,6 @@ body {
 	#sidebar nav li a {
 		margin-left: 15%;
 	}
-	#topbar a {
-		font-size: 1em;
-	}
 }
 
 /*=========================================================================== Desktop ==================================================*/
@@ -297,28 +207,74 @@ body {
 	.gal-title {
 		display: none;
 	}
-	.about-link {
-		border-right: none;
-		padding-right: 0;
+	#topbar {
+		display: block;
 	}
 	.title {
 		width: 100%;
-	}
-	#background {
+		position: fixed;
+		text-align: center;
+		top: 0;
 		width: 100%;
+		height: 130px;
+		border-bottom: 1px solid #e0e0e0;
+		background-color: rgba(255,255,255, .6);
+		margin: 0;
+	}
+	.float-left {
+		float: left;
+		margin-top: 25px;
+		margin-left: 40px;
+	}
+	.float-left h1,
+	.float-left h2 {
+		display: inline;
+		font-family: verdana;
+		font-weight: lighter;
+		margin: 0 auto;
+	}
+	.title nav {
+		display: inline-table;
 		height: 100%;
-		background: url('../fullsize/Wren Kitchens Lowry.jpg') no-repeat;
-		opacity: .9%;
-		background-size: cover;
+		border-left: 1px solid #e0e0e0;
+		border-right: 1px solid #e0e0e0;
+	}
+	.title li {
+		font-family: verdana;
+		font-size: .9em;
+		text-align: left;
+		list-style-type: none;
+	}
+	.title a {
+		border: none;
+		width: 200px;
+		display: table-cell;
+		color: black;
+		text-decoration: none;
+		padding: 11px 21px;
+	}
+	.title a:hover {
+		padding-left: 25px;
+	}
+	.interior-link:hover { 
+		color: red;
+	}
+	.food-link:hover {
+		color: green;
+	}
+	.about-link:hover {
+		color: blue;
 	}
 	.gallery {
 		margin-top: 140px;
+	}
+	.selected {
 	}
 	.about-me {
 		width: 60%;
 		height: 300%;
 		margin: 60px auto;
-		background: rgba(255, 255, 255, .9);
+		background: rgba(255, 255, 255, .5);
 		border-radius: 0 0 5px 5px;
 		box-shadow: 3px 3px 5px #777;
 		overflow: hidden;
@@ -335,65 +291,5 @@ body {
 	}
 	.about-me hr {
 		width: 70%;
-	}
-/*	.about-me::-webkit-scrollbar {
-		display: none;
-		background-color: black;
-	}
-	.about-me:hover::-webkit-scrollbar {
-		display: block;
-	}*/
-	#topbar {
-		display: block;
-		position: fixed;
-		text-align: center;
-		top: 0;
-		width: 100%;
-		height: 130px;
-		margin: 0;
-		background: rgba(255, 255, 255, .9);
-		box-shadow: 0 4px 8px #777;
-		border-radius: 0 0 5px 5px;
-	}
-	#topbar nav {
-		width: 100%;
-	}
-	#topbar li {
-		display: inline-block;
-		margin-top: 50px;
-	}
-	#topbar li a {
-		text-decoration: none;
-		color: black;
-		padding: 3px 10px !IMPORTANT;
-		width: 100%;
-		height: 100%;
-		border: 1px inset #fff;
-		border-radius: 20px;
-		transition: .1s;
-	}
-	#topbar li:hover a {
-		background-color: #ddd;
-		border: 1px outset #fff;
-		box-shadow: 0 -1px 3px  #aaa inset;
-		transition: .1s;
-	}
-	#topbar li:active a {
-		background-color: #ddd;
-		border: 1px inset #fff;
-		box-shadow: 0 1px 3px  #111 inset;
-		transition: .1s;
-	}
-	.float-left {
-		float: left;
-		margin-right: 50px;
-		margin-top: 25px;
-	}
-	.selected {
-		background-color: #ddd;
-		border: 1px inset #fff;
-		box-shadow: 0 1px 3px  #111 inset;
-		opacity: .8;
-		transition: .1s;
 	}
 }
