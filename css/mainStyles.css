@@ -78,8 +78,8 @@ body {
 }
 .title h1 {
 	font-family: 'pt_sansregular';
-	font-size: 3.5em;
-	letter-spacing: -5px;
+	font-size: 3.3em;
+	letter-spacing: 0px;
 	margin-top: -50px;
 	margin-bottom: 0;
 	color: black;
@@ -87,7 +87,8 @@ body {
 }
 .title h2 {
 	font-family: 'walkway_oblique_ultraboldRg';
-	font-size: 2em;
+	font-size: 1.5em;
+	letter-spacing: 2.5px;
 	text-shadow: 0 0 1px white;
 	margin-top: 8px;
 }
@@ -96,12 +97,16 @@ body {
 }
 .title li a {
 	font-family: 'pt_sansregular';
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: black;
 	text-decoration: none;
 	vertical-align: top;
 	padding: 0 10px;
+	border: 1px ridge #ddd;
 	text-shadow: 0 0 1px white;
+}
+.enter {
+	outline: 1px groove #ddd;
 }
 .swirl {
 	background-image: url('../img/paisley.svg');
@@ -113,9 +118,10 @@ body {
 	display: inline-block;
 	width: 75%;
 	height: 100%;
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255,255,255, .7);
 	border-right: 1px solid rgba(0, 0, 0, .2);
 	border-top: 1px solid rgba(0, 0, 0, .2);
+	box-shadow: 2px -2px 15px #777;
 }
 .nav-hide {
 	left: -80%;
@@ -125,8 +131,12 @@ body {
 	left: 0;
 }
 #sidebar h1 {
-	text-align: center;
 	font-size: 2em;
+}
+#sidebar h2,
+#sidebar h1 {
+	font-family: 'walkway_oblique_ultraboldRg';
+	text-align: center;
 }
 #sidebar nav {
 	margin-top: 15%
@@ -134,10 +144,6 @@ body {
 #sidebar nav li {
 	padding: 0 2%;
 	list-style-type: circle;
-	border-bottom: 1px solid rgba(0, 0, 0, .2);
-}
-#sidebar nav li:first-child {
-	border-top: 1px solid rgba(0, 0, 0, .2);
 }
 #sidebar nav li a {
 	margin-left: 30px;
@@ -156,8 +162,9 @@ body {
 .gallery img {
 	width: 100%;
 	padding: 2%;
-	border: 1px solid lightgray;
-	background: white;
+	outline: 1px groove #ddd;
+	border-top: 1px solid #fff;
+	background: #f0f0f0;
 }
 .gal-title {
 	font-family: 'walkway_oblique_ultraboldRg';
@@ -168,6 +175,8 @@ body {
 	height: 70px;
 	margin: 0;
 	background: rgba(255, 255, 255, .8);
+	box-shadow: 0 1px 15px #777;
+	border-radius: 0 0 5px 5px;
 }
 .icon-menu:before {
 	content: "\e606";
@@ -197,35 +206,44 @@ body {
 		padding: .5%;
 		margin: 1%;
 		border: 1px solid lightgray;
+		box-shadow: 0px 0px 20px #777;
 	}
 	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
 		width: 95%;
 	}
 	.title h1 {
-		font-size: 4.5em;
+		margin-top: -35px;
+		font-size: 3.5em;
+	}
+	#sidebar {
+		text-align: center;
 	}
 	#sidebar h1 {
 		font-size: 1.9em;
 	}
 	#sidebar nav {
+		margin-top: 0;
 		text-align: center;
+	}
+	#sidebar nav hr {
+		display: none;
 	}
 	#sidebar nav li {
 		display: inline-block;
+		vertical-align: middle;
 		margin: 0;
-		padding: 0 4%;
-		border-left: 1px solid rgba(0, 0, 0, .2);
+		padding: 0 2%;
+		border-left: 1px solid rgba(50, 50, 50, .3);
 		border-bottom: none;
-		text-align: center;
-		list-style-position: outside;
-		list-style-type: none;
+	}
+	.about-link {
+		border-right: 1px solid rgba(50, 50, 50, .3);
+		padding-right: 5%  !IMPORTANT;
 	}
 	#sidebar nav li a {
-		padding: 1px;
+		font-size: .9em;
+		padding: auto 1px;
 		margin: 0;
-	}
-	#sidebar nav li:first-child {
-		border: none
 	}
 }
 
@@ -233,7 +251,11 @@ body {
 
 @media (min-width: 600px) {
 	#sidebar {
-		width: 34%
+		width: 42%
+	}
+	.gal-title > h2 {
+		display: inline-table;
+		vertical-align: middle;
 	}
 	.title {
 		margin: 0 auto;
@@ -246,7 +268,7 @@ body {
 	}
 	.title h1 {
 		border-right: 5px solid black;
-		padding-right: 30px;
+		padding-right: 25px;
 	}
 	.title h2 {
 		font-size: 1.8em;
@@ -256,18 +278,17 @@ body {
 	.title li {
 		margin-top: 25px;
 	}
+	#sidebar nav hr {
+		display: block;
+	}
 	#sidebar nav li {
 		display: list-item;
+		font-size: 1.2em;
 		border-left: none;
-		padding: 2% 0;
+		padding: 1% 0;
 		text-align: left;
 		list-style-type: circle;
 		list-style-position: inside;
-		border-bottom: 1px solid rgba(0, 0, 0, .2);
-	}
-	#sidebar nav li:first-child {
-		border-top: 1px solid rgba(0, 0, 0, .2);
-		border-bottom: 1px solid rgba(0, 0, 0, .2);
 	}
 	#sidebar nav {
 		margin-top: 15%;
@@ -285,8 +306,12 @@ body {
 	.gal-title {
 		display: none;
 	}
+	.about-link {
+		border-right: none;
+		padding-right: 0;
+	}
 	.title {
-		width: 640px;
+		width: 600px;
 	}
 	#background {
 		width: 100%;
@@ -307,7 +332,8 @@ body {
 		height: 130px;
 		margin: 0;
 		background: rgba(255, 255, 255, .8);
-/*		box-shadow: 0 1px 2px;*/
+		box-shadow: 0 4px 8px #777;
+		border-radius: 0 0 5px 5px;
 	}
 	#topbar nav {
 		width: 100%;
@@ -315,25 +341,39 @@ body {
 	#topbar li {
 		display: inline-block;
 		margin-top: 50px;
-	
 	}
 	#topbar li a {
 		text-decoration: none;
 		color: black;
-		padding: 5px 10px;
+		padding: 3px 10px !IMPORTANT;
 		width: 100%;
 		height: 100%;
-		border-radius: 3px;
+		border: 1px inset #fff;
+		border-radius: 20px;
+		transition: .1s;
 	}
 	#topbar li:hover a {
-		background-color: rgba(20, 20, 20, .3);
+		background-color: #ddd;
+		border: 1px outset #fff;
+		box-shadow: 0 -1px 3px  #aaa inset;
+		transition: .1s;
+	}
+	#topbar li:active a {
+		background-color: #ddd;
+		border: 1px inset #fff;
+		box-shadow: 0 1px 3px  #111 inset;
+		transition: .1s;
 	}
 	.float-left {
 		float: right;
 		margin-right: 50px;
-		margin-top: 10px;
+		margin-top: 25px;
 	}
 	.selected {
-		background-color: rgba(20, 20, 20, .3);
+		background-color: #ddd;
+		border: 1px inset #fff;
+		box-shadow: 0 1px 3px  #111 inset;
+		opacity: .8;
+		transition: .1s;
 	}
 }
