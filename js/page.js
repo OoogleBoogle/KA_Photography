@@ -18,10 +18,6 @@ $(document).ready(function(e) {
 			$('#interiors').fadeIn();
 		});
 	});
-	$('#topbar').on('click', 'a', function() {
-		$('a').removeClass('selected');
-		$(this).addClass('selected');
-	})
 	$('#topbar').on('click', '.about-link', function() {
 		$('.about-me').slideToggle('slow');
 		if ($('.about-me > *').is(':visible')) {
@@ -29,5 +25,5 @@ $(document).ready(function(e) {
 		} else{
 			$('.about-me > *').delay(600).fadeIn('slow');
 		};
-	})
+	});
 });
