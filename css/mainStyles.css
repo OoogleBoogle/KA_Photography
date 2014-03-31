@@ -50,7 +50,7 @@
 }
 /*================================================================ Mobile Portrait ====================================*/
 body {
-	background: rgba(255,255,255, .7);
+	background: #eee;
 }
 #topbar {
 	display: none;
@@ -102,6 +102,7 @@ body {
 }
 .gallery img {
 	width: 100%;
+	overflow: hidden;
 }
 .gal-title {
 	font-family: 'walkway_oblique_ultraboldRg';
@@ -218,7 +219,7 @@ body {
 		width: 100%;
 		height: 130px;
 		border-bottom: 1px solid #e0e0e0;
-		background-color: rgba(255,255,255, .6);
+		background-color: rgba(250,250,250, .6);
 		margin: 0;
 	}
 	.float-left {
@@ -270,9 +271,18 @@ body {
 		width: 95%;
 	}
 	.gallery img {
+		width: auto;
 		float: left;
 		padding: 0;
-		margin: 0;
+		margin: 2px;
+	}
+	.norm {
+		width: 400px !IMPORTANT;
+		height: 266px !IMPORTANT;
+		overflow: hidden !IMPORTANT;;
+	}
+	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
+		width: 800px !IMPORTANT;
 	}
 	.about-me {
 		width: 60%;
