@@ -39,7 +39,7 @@
 	text-transform: none;
 	line-height: 1;
 
-	/* Better Font Rendering =========== */
+	 Better Font Rendering =========== 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -100,10 +100,6 @@ body {
 	margin-top: 90px;
 	text-align: center;
 }
-.gallery img {
-	width: 100%;
-	overflow: hidden;
-}
 .gal-title {
 	font-family: 'walkway_oblique_ultraboldRg';
 	position: fixed;
@@ -130,12 +126,9 @@ body {
 /*============================================================== Mobile Landscape ================================================*/
 
 @media (min-width: 410px) {
-	.gallery img {
+/*	.gallery img {
 		width: 47%;
-	}
-	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
-		width: 95%;
-	}
+	}*/
 	.title h1 {
 		margin-top: -35px;
 		font-size: 3.5em;
@@ -267,22 +260,37 @@ body {
 		color: blue;
 	}
 	.gallery {
+		position: relative;
+		padding-bottom: 100px;
 		margin: 140px auto;
-		width: 95%;
+		max-width: 1200px;
 	}
 	.gallery img {
-		width: auto;
-		float: left;
+		width: 100%;
 		padding: 0;
-		margin: 2px;
+		margin: 1;
+		float: left !IMPORTANT;
+		transition: 1s;
 	}
-	.norm {
-		width: 400px !IMPORTANT;
-		height: 266px !IMPORTANT;
-		overflow: hidden !IMPORTANT;;
+	.img-norm,
+	.img-portrait,
+	.img-landscape {
+		height: 263px;
+		overflow: hidden;
+		float: left;
 	}
-	.gallery img[src*="Lowry"], .gallery img[src*="Macaroni"] {
-		width: 800px !IMPORTANT;
+	.img-norm {
+		width: 33.3%;
+	}
+	.img-portrait {
+		width: 16.666667%;
+	}
+	.img-landscape {
+		width: 66.666667%;
+	}
+	img:hover {
+		height: 100%;
+		width: auto;
 	}
 	.about-me {
 		width: 60%;
