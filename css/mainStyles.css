@@ -260,7 +260,6 @@ body {
 		color: blue;
 	}
 	.gallery {
-		position: relative;
 		padding-bottom: 100px;
 		margin: 140px auto;
 		max-width: 1200px;
@@ -287,10 +286,6 @@ body {
 	}
 	.img-landscape {
 		width: 66.666667%;
-	}
-	img:hover {
-		height: 100%;
-		width: auto;
 	}
 	.about-me {
 		width: 60%;
