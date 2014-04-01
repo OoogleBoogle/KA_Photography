@@ -270,7 +270,6 @@ body {
 		padding: 0;
 		margin: 1;
 		float: left !IMPORTANT;
-		transition: 1s;
 	}
 	.img-norm,
 	.img-portrait,
@@ -278,6 +277,7 @@ body {
 		height: 263px;
 		overflow: hidden;
 		float: left;
+		transition: .3s;
 	}
 	.img-norm {
 		width: 33.3%;
@@ -288,9 +288,10 @@ body {
 	.img-landscape {
 		width: 66.666667%;
 	}
-	img:hover {
-		height: 100%;
-		width: auto;
+	.hovered:hover {
+		-webkit-transform: scale(1.1);
+		overflow: visible;
+		
 	}
 	.about-me {
 		width: 60%;
