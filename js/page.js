@@ -1,4 +1,4 @@
-$('#food').hide();
+$('#interiors').hide();
 $('.about-me').hide();
 
 $(document).ready(function(e) {
