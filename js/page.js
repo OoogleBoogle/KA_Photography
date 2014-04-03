@@ -3,7 +3,15 @@ $('.about-me').hide();
 
 $(document).ready(function(e) {
     $(".flex").lightGallery(); 
-
+    $(window).scroll(function() {
+    	if ($(this).scrollTop() > 89) {
+    		$('.gal-title').addClass('fixed');
+    		$('.gallery').addClass('galFix');
+    	} else {
+    		$('.gal-title').removeClass('fixed');
+    		$('.gallery').removeClass('galFix');
+    	}
+    });
 	$('.icon-menu').on('click', function(e) {
 		e.preventDefault();
 		$('#sidebar').toggleClass('nav-show');
