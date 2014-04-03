@@ -89,7 +89,7 @@ body {
 }
 .gallery {
 	margin-top: 90px;
-	text-transform: center;
+	text-align: center;
 }
 .gal-title {
 	font-family: 'walkway_oblique_ultraboldRg';
@@ -124,11 +124,20 @@ body {
 	-webkit-display: flex;
 	-webkit-flex-wrap: wrap;		
 	-webkit-justify-content: center;
-	height: 100%;
+	-ms-display: flex;
+	-ms-flex-wrap: wrap;		
+	-ms-justify-content: center;
+	list-style-type: none;
+	max-width: 1000px;
+	margin: 0 auto;
 }
-@supports not (display: flex) {
+@supports not (flex-wrap: wrap) {
 	display: block;
 }
+.flex li {
+	cursor: pointer;
+}
+
 
 /*============================================================== Mobile Landscape ================================================*/
 
@@ -197,19 +206,6 @@ body {
 	}
 	#sidebar nav li a {
 		margin-left: 15%;
-	}
-	.gallery {
-		max-width: 1000px;
-		max-height: 1000px;
-		padding: 0;
-	}
-	.gallery img {
-		width: auto;
-		padding: 0 2px;
-		margin: auto;
-	}
-	.img-landscape {
-		display: block;
 	}
 }
 
