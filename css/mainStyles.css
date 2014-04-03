@@ -9,16 +9,6 @@
 	font-style: normal;
 }
 @font-face {
-    font-family: 'pt_sansregular';
-    src: url('../fonts/PTS55F-webfont.eot');
-    src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/PTS55F-webfont.woff') format('woff'),
-         url('../fonts/PTS55F-webfont.ttf') format('truetype'),
-         url('../fonts/PTS55F-webfont.svg#pt_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'walkway_oblique_ultraboldRg';
     src: url('../fonts/Walkway_Oblique_UltraBold-webfont.eot');
     src: url('../fonts/Walkway_Oblique_UltraBold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -39,15 +29,16 @@
 	text-transform: none;
 	line-height: 1;
 
-	 Better Font Rendering =========== 
+	 /*Better Font Rendering ===========*/ 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-
 * {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
+
 /*================================================================ Mobile Portrait ====================================*/
 body {
 	background: #eee;
@@ -122,13 +113,30 @@ body {
 	border: 1px solid lightgray;
 	border-radius: 5px;
 }
+.flex img {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.flex {
+	text-align: center;
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.flex li {
+	display: inline;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
 
 /*============================================================== Mobile Landscape ================================================*/
 
 @media (min-width: 410px) {
-/*	.gallery img {
-		width: 47%;
-	}*/
 	.title h1 {
 		margin-top: -35px;
 		font-size: 3.5em;
@@ -194,9 +202,26 @@ body {
 	#sidebar nav li a {
 		margin-left: 15%;
 	}
+	.flex img {
+		height: 400px;
+		margin: 0;
+		padding: 0;
+	}
+	.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	-webkit-display: flex;
+	-webkit-flex-wrap: wrap;		
+	-webkit-justify-content: center;
+	-ms-display: flex;
+	-ms-flex-wrap: wrap;		
+	-ms-justify-content: center;
+	}
 }
 
 /*=========================================================================== Desktop ==================================================*/
+
 @media (min-width: 1025px) {
 	.gal-title {
 		display: none;
@@ -260,32 +285,7 @@ body {
 		color: blue;
 	}
 	.gallery {
-		padding-bottom: 100px;
 		margin: 140px auto;
-		max-width: 1200px;
-	}
-	.gallery img {
-		width: 100%;
-		padding: 0;
-		margin: 1;
-		float: left !IMPORTANT;
-		transition: 1s;
-	}
-	.img-norm,
-	.img-portrait,
-	.img-landscape {
-		height: 263px;
-		overflow: hidden;
-		float: left;
-	}
-	.img-norm {
-		width: 33.3%;
-	}
-	.img-portrait {
-		width: 16.666667%;
-	}
-	.img-landscape {
-		width: 66.666667%;
 	}
 	.about-me {
 		width: 60%;

@@ -1,7 +1,9 @@
-$('#food').hide();
+$('#interiors').hide();
 $('.about-me').hide();
 
 $(document).ready(function(e) {
+    $(".flex").lightGallery(); 
+
 	$('.icon-menu').on('click', function(e) {
 		e.preventDefault();
 		$('#sidebar').toggleClass('nav-show');
