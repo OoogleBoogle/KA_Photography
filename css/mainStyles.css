@@ -113,36 +113,24 @@ body {
 	border: 1px solid lightgray;
 	border-radius: 5px;
 }
-.img-landscape {
-	display: none;
-}
-.photos {
-	max-width: 1200px;
-}
-.photos img {
-	width: 100%;
+.flex img {
+	max-width: 100%;
 	height: auto;
+	padding: 0;
+	margin: 0;
 }
 .flex {
 	text-align: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	-webkit-display: flex;
-	-webkit-flex-wrap: wrap;		
-	-webkit-justify-content: center;
-	-ms-display: flex;
-	-ms-flex-wrap: wrap;		
-	-ms-justify-content: center;
 	list-style-type: none;
-	max-width: 1000px;
-	margin: 0 auto;
-}
-@supports not (flex-wrap: wrap) {
-	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 .flex li {
+	display: inline;
 	cursor: pointer;
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -214,6 +202,22 @@ body {
 	#sidebar nav li a {
 		margin-left: 15%;
 	}
+	.flex img {
+		height: 400px;
+		margin: 0;
+		padding: 0;
+	}
+	.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	-webkit-display: flex;
+	-webkit-flex-wrap: wrap;		
+	-webkit-justify-content: center;
+	-ms-display: flex;
+	-ms-flex-wrap: wrap;		
+	-ms-justify-content: center;
+	}
 }
 
 /*=========================================================================== Desktop ==================================================*/
@@ -277,11 +281,11 @@ body {
 	.food-link:hover {
 		color: green;
 	}
-	.gallery {
-		margin: 140px auto;
-	}
 	.about-link:hover {
 		color: blue;
+	}
+	.gallery {
+		margin: 140px auto;
 	}
 	.about-me {
 		width: 60%;

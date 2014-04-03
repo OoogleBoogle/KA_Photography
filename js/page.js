@@ -2,7 +2,7 @@ $('#interiors').hide();
 $('.about-me').hide();
 
 $(document).ready(function(e) {
-    $("#lightGallery").lightGallery(); 
+    $(".flex").lightGallery(); 
 
 	$('.icon-menu').on('click', function(e) {
 		e.preventDefault();
