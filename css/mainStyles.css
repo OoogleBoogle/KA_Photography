@@ -116,6 +116,13 @@ body {
 .img-landscape {
 	display: none;
 }
+.photos {
+	max-width: 1200px;
+}
+.photos img {
+	width: 100%;
+	height: auto;
+}
 .flex {
 	text-align: center;
 	display: flex;
