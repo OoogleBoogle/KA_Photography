@@ -47,9 +47,9 @@
 			<li data-src="fullsize/Wren Kitchens Marlowe.jpg" title="Wren Kitchens Marlowe" alt="Wren Kitchens Marlowe"><img class="norm" src="thumbs/Wren Kitchens Marlowe.jpg"></li>
 			<li data-src="fullsize/Wren Kitchens Marlowe Larder Unit.jpg" title="Wren Kitchens Marlowe Larder Unit" alt="Wren Kitchens Marlowe Larder Unit"><img src="thumbs/Wren Kitchens Marlowe Larder Unit.jpg"></li>
 			<li data-src="fullsize/Empire Stores White Bedding.jpg" title="Empire Stores White Bedding" alt="Empire Stores White Bedding"><img src="thumbs/Empire Stores White Bedding.jpg"></li>
+			<li data-src="fullsize/Cushions.jpg" title="" alt=""><img src="thumbs/Cushions.jpg"></li>
 			<li data-src="fullsize/Wren Kitchens Lowry.jpg" class="img-landscape" title="Wren Kitchens Lowry" alt="Wren Kitchens Lowry"><img class="norm"src="thumbs/Wren Kitchens Lowry.jpg"></li>	
 			<li data-src="fullsize/Wren Kitchens Vinci.jpg" title="Wren Kitchens Vinci" alt="Wren Kitchens Vinci"><img class="norm" src="thumbs/Wren Kitchens Vinci.jpg"></li>
-			<li data-src="fullsize/Cushions.jpg" title="" alt=""><img src="thumbs/Cushions.jpg"></li>
 			<li data-src="fullsize/Wren Kitchens Wilde.jpg" title="Wren Kitchens Wilde" alt="Wren Kitchens Wilde"><img class="norm" src="thumbs/Wren Kitchens Wilde.jpg"></li>
 			<li data-src="fullsize/Wren Kitchens Byron.jpg" title="Wren Kitchens Byron" alt="Wren Kitchens Byron"><img class="norm" src="thumbs/Wren Kitchens Byron.jpg"></li>
 		</ul>
@@ -85,8 +85,19 @@
 			<li data-src="fullsize/Ice Cream Float.jpg" data-lightbox="food" title="Ice Cream Float" alt="Ice Cream Float"><img src="thumbs/Ice Cream Float.jpg"></li>
 		</ul>
 	</div>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/page.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/page.js"></script>
 <script src="js/lightGallery.min.js"></script>
+<script type="text/javascript">     
+	$(window).scroll(function() {
+  	if ($(this).scrollTop() > 91) {
+  		$('.gal-title').addClass('fixed');
+  		$('.gallery').addClass('galFix');
+  	} else {
+  		$('.gal-title').removeClass('fixed');
+  		$('.gallery').removeClass('galFix');
+  	}
+  });
+	</script>
 </body>
 </html>

@@ -52,7 +52,7 @@ body {
 	margin-top: 80px;
 	width: 75%;
 	height: 100%;
-	background: rgba(255,255,255, .7);
+	background: rgba(255,255,255, .9);
 	border-right: 1px solid rgba(0, 0, 0, .2);
 	border-top: 1px solid rgba(0, 0, 0, .2);
 	box-shadow: 2px -2px 15px #777;
@@ -99,7 +99,6 @@ body {
 	margin: 0;
 	padding-top: 5px;
 	background: rgba(255, 255, 255, .6);
-	transition: .4s;
 }
 .fixed {
 	position: fixed;
@@ -132,8 +131,9 @@ body {
 .icon-menu {
 	text-decoration: none;
 	float: left;
+	margin-right: -50px;
 	margin-left: 4%;
-	padding: 3px;
+	padding: 2px;
 	border: 1px solid lightgray;
 	border-radius: 5px;
 }
