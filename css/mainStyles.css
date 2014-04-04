@@ -123,7 +123,10 @@ body {
 }
 .mob {
 	max-width: 410px;
-}
+	height: 91px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	}
 .icon-menu:before {
 	content: "\e606";
 	color: black;
