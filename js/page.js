@@ -49,7 +49,7 @@ $(document).ready(function(e) {
 	$('.icon-close').on('click', function(e) {
 		e.preventDefault();
 		$('.about-me-mob > *').fadeOut('fast', function() {
-			$('.about-me-mob').slideUp('slow');
+			$('.about-me-mob').delay(250).slideUp('slow');
 		});
 	});
 });
