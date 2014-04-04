@@ -1,7 +1,18 @@
 $('#interiors').hide();
 $('.about-me').hide();
 $(document).ready(function(e) {
-    $(".flex").lightGallery(); 
+    $(".flex").lightGallery();
+
+    $(window).scroll(function() {
+    	var scroll = $(window).scrollTop();
+    	if(scroll > 1) {
+    		$('.gal-title').addClass('shadow')
+    	} else {
+    		$('.gal-title').removeClass('shadow')
+    	}
+    });
+
+
 	$('.icon-menu').on('click', function(e) {
 		e.preventDefault();
 		$('#sidebar').toggleClass('nav-show');
