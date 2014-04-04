@@ -1,5 +1,7 @@
-$('#interiors').hide();
+$('#food').hide();
 $('.about-me').hide();
+$('.about-me-mob').hide();
+
 $(document).ready(function(e) {
     $(".flex").lightGallery();
 
@@ -28,12 +30,26 @@ $(document).ready(function(e) {
 			$('#interiors').fadeIn();
 		});
 	});
-	$('#topbar').on('click', '.about-link', function() {
+	$('#topbar').on('click', '.about-link', function(e) {
+		e.preventDefault();
 		$('.about-me').slideToggle('slow');
 		if ($('.about-me > *').is(':visible')) {
 			$('.about-me > *').fadeOut('fast');
 		} else{
 			$('.about-me > *').delay(600).fadeIn('slow');
 		};
+	});
+	$('#sidebar').on('click', '.about-link', function(e) {
+		e.preventDefault();
+		$('#sidebar').removeClass('nav-show');
+		$('.about-me-mob').slideDown('2000', function() {
+			$('.about-me-mob > *').fadeIn();
+		});
+	});
+	$('.icon-close').on('click', function(e) {
+		e.preventDefault();
+		$('.about-me-mob > *').fadeOut('fast', function() {
+			$('.about-me-mob').slideUp('slow');
+		});
 	});
 });
