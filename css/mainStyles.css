@@ -49,7 +49,7 @@ body {
 #sidebar {
 	position: fixed;
 	display: inline-block;
-	margin-top: 80px;
+	margin-top: 20px;
 	width: 75%;
 	height: 100%;
 	background: rgba(255,255,255, .9);
@@ -59,7 +59,7 @@ body {
 }
 .nav-hide {
 	left: -80%;
-	transition: .3s;
+	transition: .4s;
 }
 .nav-show {
 	left: 0;
@@ -69,7 +69,8 @@ body {
 }
 #sidebar h2,
 #sidebar h1 {
-	font-family: 'walkway_oblique_ultraboldRg';
+	font-family: verdana;
+	font-weight: 100;
 	text-align: center;
 }
 #sidebar nav {
@@ -101,7 +102,7 @@ body {
 	margin: 0;
 	padding-top: 5px;
 	background: rgba(255, 255, 255, .6);
-	transition: .4s;
+	transition: .2s;
 }
 .shadow {
 	box-shadow: 0 5px 20px -5px #777;
@@ -167,6 +168,7 @@ body {
 		font-size: 3.5em;
 	}
 	#sidebar {
+		margin-top: 0px;
 		text-align: center;
 	}
 	#sidebar h1 {
