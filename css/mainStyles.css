@@ -140,7 +140,7 @@ body {
 	border-radius: 5px;
 }
 .flex img {
-	max-width: 100%;
+	max-width: 99%;
 	height: auto;
 	padding: 0;
 }
@@ -196,11 +196,12 @@ body {
 		font-size: 3.5em;
 	}
 	#sidebar {
-		margin-top: 0px;
+		margin-top: -20px;
 		text-align: center;
 	}
 	#sidebar h1 {
 		font-size: 1.9em;
+		margin-bottom: -10px;
 	}
 	#sidebar nav {
 		margin-top: 0;
@@ -258,7 +259,8 @@ body {
 		margin-left: 15%;
 	}
 	.flex img {
-		height: 400px;
+		height: 150px;
+		width: auto;
 		margin: 0;
 		padding: 0;
 	}
@@ -272,6 +274,8 @@ body {
 	-ms-display: flex;
 	-ms-flex-wrap: wrap;		
 	-ms-justify-content: center;
+	width: 80%;
+	margin: 0 auto;
 	}
 	.about-me-mob {
 		right: 10%;
@@ -304,8 +308,8 @@ body {
 	}
 	.float-left {
 		float: left;
-		margin-top: 25px;
-		margin-left: 40px;
+		margin-top: 35px;
+		margin-left: 100px;
 		background-color: transparent;
 	}
 	.float-left h1,
@@ -313,7 +317,9 @@ body {
 		display: inline;
 		font-family: verdana;
 		font-weight: 100;
-		margin: 0 auto;
+	}
+	.float-left h1 {
+		font-size: 3em;
 	}
 	.title nav {
 		display: inline-table;
@@ -348,6 +354,7 @@ body {
 		color: blue;
 	}
 	.gallery {
+		width: 90%;
 		margin: 140px auto;
 	}
 	.about-me {
@@ -360,12 +367,7 @@ body {
 		box-shadow: 3px 3px 5px #777;
 		overflow: hidden;
 	}
-/*	.about-me > * {
-		font-family: verdana;
-		font-weight: lighter;		
-	}*/
 	.about-me h2 {
-
 		margin-left: 5%;
 	}
 	.about-me p {
