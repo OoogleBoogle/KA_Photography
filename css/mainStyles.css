@@ -102,10 +102,10 @@ body {
 	margin: 0;
 	padding-top: 5px;
 	background: rgba(255, 255, 255, .6);
-	transition: .2s;
 }
 .shadow {
 	box-shadow: 0 5px 20px -5px #777;
+	transition: .2s;
 }
 
 .float-left {
@@ -184,7 +184,6 @@ body {
 	opacity: .95;
 	top: 0;
 	z-index: 500;
-	box-shadow: 0 5px 20px #777;
 }
 
 
@@ -265,22 +264,23 @@ body {
 		padding: 0;
 	}
 	.flex {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	-webkit-display: flex;
-	-webkit-flex-wrap: wrap;		
-	-webkit-justify-content: center;
-	-ms-display: flex;
-	-ms-flex-wrap: wrap;		
-	-ms-justify-content: center;
-	width: 80%;
-	margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		-webkit-display: flex;
+		-webkit-flex-wrap: wrap;		
+		-webkit-justify-content: center;
+		-ms-display: flex;
+		-ms-flex-wrap: wrap;		
+		-ms-justify-content: center;
+		width: 80%;
+		margin: 0 auto;
 	}
 	.about-me-mob {
 		right: 10%;
 		left: 10%;
 		width: 80%;
+		box-shadow: 0 5px 20px #777;
 	}
 }
 
